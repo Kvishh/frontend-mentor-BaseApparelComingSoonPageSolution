@@ -151,13 +151,13 @@ Media Query
         width: 600px;
         height: 700px;
         margin-top: 7rem;
-        overflow: hidden;
     }
     .image-container img{
         object-fit: cover;
         max-width: 100%;
         width: 700px;
-        height: auto;
+        height: 300px;
+        object-position: top;
     }
     .main-text-container{
         order: 2;
