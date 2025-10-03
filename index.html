@@ -10,7 +10,7 @@
 <body>
     <main>
         <div class="main-text-container">
-            <img src="images/logo.svg" alt="logo" id="logo">
+            <img src="images/logo.svg" alt="logo" id="logo" >
             <h1 class="header"><span class="header-first-line">We're</span> 
                 <span class="header-second-third-line">coming</span> 
                 <span class="header-second-third-line">soon</span>
@@ -30,7 +30,11 @@
             </div>
         </div>
         <div class="image-container">
-            <img src="images/hero-desktop.jpg" alt="model">
+            <picture>
+                <source media="(min-width: 375px)" srcset="images\hero-desktop.jpg">
+                <source media="(max-width: 600px)" srcset="images\hero-mobile.jpg">
+                <img src="images/hero-desktop.jpg" alt="model">
+            </picture>
         </div>
     </main>
     <script src="script.js"></script>
